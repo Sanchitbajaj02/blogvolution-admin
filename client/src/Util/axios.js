@@ -3,7 +3,7 @@ import axios from "axios";
 let ultimateToken = {};
 
 // const baseURL = 'http://localhost:3003'
-const baseURL = "http://http://20.231.108.223/server";
+const baseURL = "http://20.231.108.223/server";
 
 // login the user
 let userLogin = async (loginDetails) => {
