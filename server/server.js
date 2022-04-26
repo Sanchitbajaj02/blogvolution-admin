@@ -25,11 +25,12 @@ db.connect((err) => {
 
 // admin route
 const adminRouter = require("./routes/admin");
-app.use("/", adminRouter);
+// app.use("/", adminRouter);
+app.use("/server", adminRouter);
 
 const userRouter = require("./routes/user");
-app.use("/admin", userRouter);
-
+// app.use("/admin", userRouter);
+app.use("/server/admin", userRouter);
 
 // const tk = require("./middleware/token");
 // app.get("/", tk.jwtVerification, (req, res) => {
