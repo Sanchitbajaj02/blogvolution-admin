@@ -1,0 +1,92 @@
+/* ========== LeftPanel.jsx CSS starts here ========== */
+
+.border-shadow-box {
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.7);
+  margin: 1rem;
+  height: 88vh;
+}
+
+.main-styling {
+  height: 95vh;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px !important;
+}
+
+.user-profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.left-bottom-buttons {
+  cursor: pointer;
+  padding: 3px 8px;
+}
+
+.left-bottom-buttons:hover {
+  background-color: #991414;
+  border-radius: 50px;
+  color: white;
+}
+
+.postbutton {
+  border: 2px solid #991414;
+  font-size: 15px !important;
+  background-color: #991414;
+  border-radius: 50px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.postbutton:hover {
+  color: #991414;
+  background-color: #fff;
+}
+
+.blogbutton {
+  border: 2px solid #991414;
+  border-radius: 50px;
+  color: #991414;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.blogbutton:hover {
+  color: white;
+  background-color: #991414;
+}
+
+.option-btn {
+  border: 1px solid rgba(153, 20, 20, 0.8);
+  border-radius: 50%;
+  color: rgba(153, 20, 20, 0.8);
+  padding: 8px;
+  transition: all 0.3s ease;
+}
+
+.option-btn:hover {
+  color: white;
+  background-color: #991414;
+}
+
+.isActive {
+  color: #000 !important;
+  border: 2px solid #000;
+}
+
+.isActive:hover {
+  color: #fff !important;
+  border: 2px solid #991414;
+}
+
+.blogbutton:focus {
+  outline: none;
+}
+
+.cont {
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.6);
+}

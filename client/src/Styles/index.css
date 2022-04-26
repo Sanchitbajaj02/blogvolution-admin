@@ -1,0 +1,59 @@
+/* Font includes */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap");
+
+/* ---------------Admin Panel css----------------- */
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #d1e4e4;
+}
+
+.Link-highlight {
+  text-decoration: none;
+  color: #000000;
+}
+
+.Link-highlight:hover {
+  text-decoration: none;
+}
+
+.material-icons {
+  padding-left: 30px;
+  padding-bottom: 20px;
+  padding-top: 13px;
+}
+
+.author {
+  color: blue;
+}
+
+.bottom1 {
+  padding-left: 1%;
+  padding-right: 10%;
+}
+
+/* Left panel css */
+
+.sticky-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.wrapper {
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 768px) {
+  .sticky-bar {
+    position: relative;
+    z-index: 1000;
+  }
+
+  .wrapper {
+    flex-wrap: wrap;
+  }
+}
