@@ -10,7 +10,8 @@ const Home = () => {
 
   useEffect(() => {
     axios({
-      url: "http://localhost:3003/posts",
+      // url: "http://localhost:3003/posts",
+      url: "http://20.231.108.223/server/posts",
       method: "GET",
       headers: {
         authorization: `Bearer ${context.user?.token}`,
@@ -23,7 +24,8 @@ const Home = () => {
 
   useEffect(() => {
     axios({
-      url: "http://localhost:3003/showPostComments",
+      // url: "http://localhost:3003/showPostComments",
+      url: "http://20.231.108.223/server/showPostComments",
       method: "GET",
       headers: {
         authorization: `Bearer ${context.user?.token}`,

@@ -14,7 +14,8 @@ const Posts = () => {
 
   useEffect(() => {
     axios({
-      url: "http://localhost:3003/posts",
+      // url: "http://localhost:3003/posts",
+      url: "http://20.231.108.223/server/posts",
       method: "GET",
       headers: {
         authorization: `Bearer ${context.user?.token}`,
@@ -28,7 +29,8 @@ const Posts = () => {
   //deleting post
   const deletePost = (id) => {
     axios({
-      url: `http://localhost:3003/deletePost/${id}`,
+      // url: `http://localhost:3003/deletePost/${id}`,
+      url: `http://20.231.108.223/server/deletePost/${id}`,
       method: "DELETE",
       headers: {
         authorization: `Bearer ${context.user?.token}`,
@@ -88,15 +90,13 @@ const Posts = () => {
                         <a
                           href={"https://rcc-blog.vercel.app/blog/" + item.slug}
                           target="_blank"
-                          rel="noreferrer"
-                        >
+                          rel="noreferrer">
                           <i className="fa fa-eye btn option-btn font-weight-bolder mx-1"></i>
                         </a>
                         <i className="fa fa-pencil btn option-btn font-weight-bolder mx-1"></i>
                         <i
                           className="fa fa-trash-o btn option-btn font-weight-bolder mx-1"
-                          onClick={() => deletePost(item.blogId)}
-                        ></i>
+                          onClick={() => deletePost(item.blogId)}></i>
                       </td>
                     </tr>
                   </React.Fragment>
